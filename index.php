@@ -10,6 +10,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/082fb10a36.js" crossorigin="anonymous"></script>
     <title>Tec Blog</title>
 
     <style>
@@ -27,15 +29,12 @@
         background: white;
         color: black;
       }
-      ul#menuPrincipalLinks{
-        margin-left: 30px;
-      }
       a#logo{
         font-family: 'Fredoka One', cursive;
         font-size: 32px;
       }
       div.container{
-        width: 76%;
+        width: 80%;
       }
       div#conteudoPostagens{
         background: white;
@@ -53,10 +52,38 @@
         border-radius: 20px;
         margin: 5px 0;
       }
+      form#formPesquisa{
+        padding: 5px 0;
+      }
+      div.caixaPostagens{
+        margin-bottom: 25px;
+      }
+      div.card{
+        float: left;
+      }
+      div.limparFluxo{
+        clear: both;
+      }
+      i#iconUser{
+        padding-right: 10px;
+      }
+      span#subMenuPrincipal a.nav-link{
+        color: black;
+        margin-right: 0;
+      }
+      span#subMenuPrincipal a.nav-link:hover{
+        color: white;
+        background: black;
+      }
+      @media(max-width: 1100px){
+        ul#menuPrincipalLinks{
+          margin-left: 30px;
+        }
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="menuPrincipal">
+    <nav class="navbar navbar-expand-xl navbar-light bg-primary" id="menuPrincipal">
       <div class="container">
         <a class="navbar-brand" href="index.php" id="logo">TecBlog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,16 +100,26 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Computadores</a>
             </li>
+          
+            <form id="formPesquisa" class="d-flex" style="float: right;">
+              <input required class="form-control me-2" type="search" name="pesquisa" id="pesquisa" placeholder="pesquise">
+              <button class="btn btn-success" type="submit">Pesquisar</button>
+            </form>
+
+            <li class="nav-item">
+              
+            </li>
           </ul>
-          <form id="formPesquisa" class="d-flex">
-            <input required class="form-control me-2" type="search" name="pesquisa" id="pesquisa" placeholder="pesquise">
-            <button class="btn btn-success" type="submit">Pesquisar</button>
-          </form>
+          <span class="navbar-text" id="subMenuPrincipal">
+            <a class="nav-link" href="#"><i class="fas fa-user" id="iconUser"></i>Conta</a>
+          </span>
         </div>
       </div>
     </nav>
+
+
     <div class="container" id="conteudoPostagens">
-      <div id="carrosselUltimasPostagens" class="carousel slide" data-bs-ride="carousel">
+      <div id="carrosselUltimasPostagens" class="carousel slide caixaPostagens" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carrosselUltimasPostagens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carrosselUltimasPostagens" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -120,7 +157,60 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div><!-- fim conteudo postagens -->
+
+
+
+      <div class="card caixaPostagens" style="width: 22rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card caixaPostagens" style="width: 22rem; margin: 0 37px;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card caixaPostagens" style="width: 22rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="limparFluxo"></div>
+
+
+
+      <div class="card caixaPostagens" style="width: 22rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card caixaPostagens" style="width: 22rem; margin: 0 37px;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card caixaPostagens" style="width: 22rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="limparFluxo"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
