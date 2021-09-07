@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/082fb10a36.js" crossorigin="anonymous"></script>
     <title>Tec Blog</title>
-
+    <!-- estilo -->
     <style>
       body{
         font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
@@ -38,7 +38,7 @@
       }
       div#conteudoPostagens{
         background: white;
-        margin-top: 20px;
+        margin: 20px auto;
       }
       div.carousel-inner{
         border-radius: 30px;
@@ -52,14 +52,15 @@
         border-radius: 20px;
         margin: 5px 0;
       }
+      div#carrosselUltimasPostagens{
+        margin-bottom: 20px;
+      }
       form#formPesquisa{
         padding: 5px 0;
       }
-      div.caixaPostagens{
-        margin-bottom: 25px;
-      }
       div.card{
         float: left;
+        margin-bottom: 20px;
       }
       div.limparFluxo{
         clear: both;
@@ -74,6 +75,12 @@
       span#subMenuPrincipal a.nav-link:hover{
         color: white;
         background: black;
+      }
+      footer#rodape{
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
       }
       @media(max-width: 1100px){
         ul#menuPrincipalLinks{
@@ -101,15 +108,12 @@
               <a class="nav-link" href="#">Computadores</a>
             </li>
           
-            <form id="formPesquisa" class="d-flex" style="float: right;">
+            <form id="formPesquisa" class="d-flex">
               <input required class="form-control me-2" type="search" name="pesquisa" id="pesquisa" placeholder="pesquise">
               <button class="btn btn-success" type="submit">Pesquisar</button>
             </form>
-
-            <li class="nav-item">
-              
-            </li>
           </ul>
+
           <span class="navbar-text" id="subMenuPrincipal">
             <a class="nav-link" href="#"><i class="fas fa-user" id="iconUser"></i>Conta</a>
           </span>
@@ -158,59 +162,73 @@
         </button>
       </div>
 
-
-
-      <div class="card caixaPostagens" style="width: 22rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card caixaPostagens" style="width: 22rem; margin: 0 37px;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card caixaPostagens" style="width: 22rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="limparFluxo"></div>
 
-
-
-      <div class="card caixaPostagens" style="width: 22rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card caixaPostagens" style="width: 22rem; margin: 0 37px;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card caixaPostagens" style="width: 22rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="limparFluxo"></div>
     </div>
+    <footer id="rodape">
+      Todos os direitos reservados &copy; <?= '2020 - '.date('Y') ?>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
